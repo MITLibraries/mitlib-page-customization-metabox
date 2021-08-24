@@ -1,0 +1,13 @@
+{
+    "name": "MITLibraries/mitlib-page-customization-metabox",
+    "description": "A plugin that adds a block of help text to a metabox on the page editing screen.",
+    "type": "wordpress-plugin",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Matt Bernhardt",
+            "email": "mjbernha@mit.edu"
+        }
+    ],
+    "require": {}
+}
