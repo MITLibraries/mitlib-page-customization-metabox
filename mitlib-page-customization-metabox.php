@@ -7,7 +7,7 @@
  * Version: 1.0
  * Author URI: https://github.com/MITLibraries
  * License: GPLv2
- * 
+ *
  * @package MITlib Page Customization Metabox
  * @author MIT Libraries
  * @link https://github.com/MITLibraries/mitlib-page-customization-metabox
@@ -30,22 +30,22 @@
 
 // Don't call the file directly!
 if ( ! defined( 'ABSPATH' ) ) {
-    exit;
+	exit;
 }
 
 /**
  * Adds a meta box to the page editing screen
  */
 function prfx_custom_meta() {
-    add_meta_box( 'prfx_meta', __( 'Page Customization', 'prfx-textdomain' ), 'prfx_meta_callback', 'page', 'side', 'high' );
+	add_meta_box( 'prfx_meta', __( 'Page Customization', 'prfx-textdomain' ), 'prfx_meta_callback', 'page', 'side', 'high' );
 }
 add_action( 'add_meta_boxes', 'prfx_custom_meta' );
 
 /**
  * Outputs the content of the meta box
+ *
+ * @param object $post unused.
  */
 function prfx_meta_callback( $post ) {
-    echo 'To customize the breadcrumb and the link to the top-level category at the top of the page, see the <b>Categories</b> box below.';  
+	echo 'To customize the breadcrumb and the link to the top-level category at the top of the page, see the <b>Categories</b> box below.';
 }
-
-?>
